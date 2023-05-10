@@ -1,0 +1,46 @@
+/* HOME */
+@media (min-width: 380px) and (max-width: 1025px) {
+  .title {
+    background-size: auto;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 100vw;
+
+    &.home {
+      width: 100vw;
+    }
+  }
+
+  .rh-menu {
+    text-align: center;
+  }
+
+  .lh-menu {
+    text-align: center;
+  }
+
+  .main-title {
+    margin-top: 30px;
+    text-align: center;
+
+    h1 {
+      font-size: 30px;
+      letter-spacing: 10px;
+    }
+  }
+
+  .title-lf {
+    margin: 0 auto;
+  }
+
+  .title-rh {
+    margin: 0 auto;
+    text-align: center;
+  }
+}

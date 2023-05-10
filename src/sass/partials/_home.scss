@@ -4,7 +4,7 @@ $font-menu: #fff;
 $font-title: #BEA67C;
 
 .title {
-  height: 100vh;
+  height: 805px;
   width: 100vw;
   background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://i.postimg.cc/Kcs1kXKc/background.png");
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@ $font-title: #BEA67C;
     margin-top: 25px;
     margin-bottom: 0;
     letter-spacing: 8px;
-    }
+  }
 
   p {
     color: $font-menu;
@@ -37,27 +37,28 @@ $font-title: #BEA67C;
     margin-top: 5px;
     margin-bottom: 0;
     letter-spacing: 4.5px;
-    }
+  }
 }
 
 .rh-menu {
   flex: 1;
   text-align: end;
-  padding-right: 10px;
+  padding-right: 13px;
   padding-top: 33px;
+
   li {
-      display: inline;
-      margin: 10px 10px;
-    }
+    display: inline;
+    margin: 10px 10px;
+  }
 
   a {
-      color: $font-menu;
-      font-family: $font-header;
-      font-size: 14px;
-      text-decoration: none;
-      letter-spacing: 2px;
-      font-weight: 200;
-    }
+    color: $font-menu;
+    font-family: $font-header;
+    font-size: 14px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 200;
+  }
 
   a:hover {
     color: $font-title;
@@ -70,6 +71,7 @@ $font-title: #BEA67C;
   margin-top: 160px;
   margin-bottom: 25px;
   position: relative;
+
   h1 {
     color: $font-title;
     font-family: $font-header;
@@ -95,13 +97,34 @@ $font-title: #BEA67C;
 }
 
 .main-title::after {
-    content: '';
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 221px;
-    height: 5px;
-    background: $font-title;
-    position: absolute;
-    margin-top: 52px;
+  content: '';
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 221px;
+  height: 5px;
+  background: $font-title;
+  position: absolute;
+  margin-top: 52px;
+}
+
+.discovery {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  text-align: center;
+
+  h2 {
+    color: $font-menu;
+    font-family: $font-header;
+    font-weight: 100;
+    letter-spacing: 7.5px;
+  }
+
+  i {
+    color: $font-menu;
+    font-size: 30px;
+  }
 }

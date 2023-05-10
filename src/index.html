@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El-tigre</title>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <section class="title">
-        <div class="container">
+        <div class="container home">
             <div class="header">
                 <div class="le-menu">
                     <h3>EL TIGRE</h3>
@@ -32,7 +35,46 @@
                     <h1>ORIGINAL TASTES</h1>
                 </div>
             </div>
+            <div class="discovery">
+                <h2>DISCOVER</h2>
+                <i class="far fa-arrow-alt-circle-down"></i>
+            </div>
         </div>
     </section>
+    <section class="produckts">
+        <div class="container">
+            <div class="products-title">
+                <h3>PRODUCTS</h3>
+            </div>
+            <div class="products-list">
+            </div>
+        </div>
+    </section>
+
+    <!--PRODUCTS TEMPLATE-->
+    <script id="template-products" type="text/x-handlebars-template">
+        <div class="products-details">
+            <div class="product-descr">
+                <div class="descr-one">
+                    <h1> {{ id }}. {{ name }} </h1>
+                </div>
+                <div class="descr-two">
+                    <p> {{ describe }} </p>
+                </div>
+                <div class="descr-three">
+                    <ul>
+                        <li>ROASTING: <span> {{ roasting }} </span></li>
+                        <li>INTENSITY: <span> {{ intensity }}</span></li>
+                    </ul>
+                    <i class=" {{ popular }} "></i>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src=" {{ img }}" alt=" {{ name }} ">
+            </div>
+        </div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
