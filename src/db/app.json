@@ -1,8 +1,8 @@
 {
   "el-tigre" : [
     {
-      "id": "01",
-      "name": "LA LAGARTIJA",
+      "id": "1",
+      "name": "01. LA LAGARTIJA",
       "describe": "Mysterious and treacherous... The best choice for the start of your journey! It will provide you a rich delicious flavor.",
       "roasting": "5/10",
       "intensity": "6/10",
@@ -10,8 +10,8 @@
       "popular": "far fa-check-circle"
     },
     {
-        "id": "02",
-        "name": "EL TIGRE",
+        "id": "2",
+        "name": "02. EL TIGRE",
         "describe": "Really dark coffee, only for the real gourments. It has bitter flavor of grapefruits and is mixed with a little bit peanuts with caramel.",
         "roasting": "8/10",
         "intensity": "9/10",
@@ -19,8 +19,8 @@
         "popular": ""
     },
     {
-        "id": "03",
-        "name": "LA CUCARACHA",
+        "id": "3",
+        "name": "03. LA CUCARACHA",
         "describe": "Sweet and intense with a big amonut of different flavors. Caramel, grapes, strawberry, you name it! It's great choice for warm summer day.",
         "roasting": "3/10",
         "intensity": "7/10",

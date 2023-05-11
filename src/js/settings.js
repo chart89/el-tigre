@@ -4,6 +4,7 @@ export const select = {
   },
   containerOf: {
     productList: '.products-list',
+    productsDetails: '.products-details',
   },
 };
  
@@ -16,5 +17,11 @@ export const settings = {
 export const templates = {
   productsTemplate: {
     coffeeList: Handlebars.compile(document.querySelector(select.templateOf.coffeeProducts).innerHTML),
+  },
+};
+
+export const className = {
+  showProductsreverse: {
+    reverse: 'reverse',
   },
 };
