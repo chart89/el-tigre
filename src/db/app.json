@@ -7,7 +7,7 @@
       "roasting": "5/10",
       "intensity": "6/10",
       "img": "https://i.postimg.cc/J4cSY8bM/coffee-1.png",
-      "popular": "far fa-check-circle"
+      "popular": ""
     },
     {
         "id": "2",
@@ -16,7 +16,7 @@
         "roasting": "8/10",
         "intensity": "9/10",
         "img": "https://i.postimg.cc/FsDDJHyd/coffee-2.png",
-        "popular": ""
+        "popular": "hidden"
     },
     {
         "id": "3",
@@ -25,7 +25,7 @@
         "roasting": "3/10",
         "intensity": "7/10",
         "img": "https://i.postimg.cc/jSxmG1XN/coffee-3.png",
-        "popular": ""
+        "popular": "hidden"
     }
   ]
 } 

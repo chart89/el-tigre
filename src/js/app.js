@@ -2,20 +2,20 @@ import utils from './utils.js';
 import {select, settings, templates, className} from './settings.js';
 
 
-class coffeeProducts {
+class App {
   constructor(){
-    const thisCoffeeProducts = this;
-    thisCoffeeProducts.getElements();
-    thisCoffeeProducts.initData();
+    const thisApp = this;
+    thisApp.getElements();
+    thisApp.initData();
   }
 
   getElements(){
-    const thisCoffeeProducts = this;
-    thisCoffeeProducts.productsList = document.querySelector(select.containerOf.productList);
+    const thisApp = this;
+    thisApp.productsList = document.querySelector(select.containerOf.productList);
   }
 
   initData(){
-    const thisCoffeeProducts = this;
+    const thisApp = this;
 
     const url = settings.db.url;
 
@@ -25,37 +25,37 @@ class coffeeProducts {
       })
       .then(function(parasedResponse){
    
-        thisCoffeeProducts.books = parasedResponse;
-        thisCoffeeProducts.initList();
+        thisApp.coffeeBean = parasedResponse;
+        thisApp.initList();
       })
       .then(function(){
-        thisCoffeeProducts.revDisplay();
+        thisApp.revDisplay();
       });
   }
 
   initList(){
-    const thisCoffeeProducts = this;
+    const thisApp = this;
     
-    for(let product in thisCoffeeProducts.books){
+    for(let product in thisApp.coffeeBean){
   
-      const generatedHTML = templates.productsTemplate.coffeeList(thisCoffeeProducts.books[product]); 
+      const generatedHTML = templates.productsTemplate.coffeeList(thisApp.coffeeBean[product]); 
       const showProducts = utils.createDOMFromHTML(generatedHTML);
-      thisCoffeeProducts.productsList.appendChild(showProducts);
+      thisApp.productsList.appendChild(showProducts);
       
     }
   }
 
   revDisplay(){
-    const thisCoffeeProducts = this;
-    thisCoffeeProducts.productsDetails = document.querySelectorAll(select.containerOf.productsDetails);
-    for(let idProduct of thisCoffeeProducts.productsDetails){
+    const thisApp = this;
+    thisApp.productsDetails = document.querySelectorAll(select.containerOf.productsDetails);
+    for(let idProduct of thisApp.productsDetails){
       if (idProduct.getAttribute('id')%2 == 0){
         idProduct.classList.add(className.showProductsreverse.reverse);
       }
     }
   }
 }
-const app = new coffeeProducts();
+const app = new App();
 console.log(app);
 
 

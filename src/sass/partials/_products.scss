@@ -41,6 +41,7 @@ $font-title: #BEA67C;
 
   &.reverse {
     flex-direction: row-reverse;
+
     img {
       text-align: right;
     }
@@ -108,12 +109,15 @@ $font-title: #BEA67C;
     color: $font-title;
   }
 
-  i {
+  .disp {
     position: absolute;
-    font-size: 150px;
-    top: -20px;
+    height: 150px;
+    width: 150px;
+    top: -25px;
     right: 20px;
-    color: $font-title;
+    &.hidden {
+      display: none;
+    }
   }
 }
 

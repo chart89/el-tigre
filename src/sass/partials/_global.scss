@@ -1,3 +1,5 @@
+/* VARIABLES */
+$font-header: 'Source Sans Pro', sans-serif;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -15,5 +17,22 @@ body {
 
   &.home {
     height: 765px;
+  }
+}
+
+.footer {
+  position: relative;
+  margin: 0;
+  height: 50px;
+  text-align: center;
+
+  p{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $font-header;
+    font-size: 13px;
+    line-height: 0;
   }
 }
