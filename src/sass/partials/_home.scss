@@ -6,7 +6,7 @@ $font-title: #BEA67C;
 .title {
   height: 805px;
   width: 100vw;
-  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("https://i.postimg.cc/Kcs1kXKc/background.png");
+  background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url("/images/background.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -51,16 +51,20 @@ $font-title: #BEA67C;
     margin: 10px 10px;
   }
 
-  a {
+  .navli {
     color: $font-menu;
     font-family: $font-header;
     font-size: 14px;
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 200;
+
+    &.active {
+      color: $font-title;
+    }
   }
 
-  a:hover {
+  .navli:hover {
     color: $font-title;
   }
 }
@@ -129,12 +133,12 @@ $font-title: #BEA67C;
   }
 }
 
-.join {
+#home {
   height: 690px;
   width: 100vw;
   margin: 5px auto;
   padding-top: 20px;
-  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("https://i.postimg.cc/2SYr3Tx8/about-us.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url("/images/about-us.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -153,6 +157,7 @@ $font-title: #BEA67C;
     letter-spacing: 1.5px;
     margin-bottom: 40px;
   }
+
   .p-rgh {
     right: 0;
     top: 275px;

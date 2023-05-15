@@ -1,5 +1,7 @@
 /* VARIABLES */
 $font-header: 'Source Sans Pro', sans-serif;
+$font-menu: #fff;
+$font-title: #BEA67C;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -17,6 +19,16 @@ body {
 
   &.home {
     height: 765px;
+  }
+}
+
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
   }
 }
 

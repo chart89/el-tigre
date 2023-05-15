@@ -22,9 +22,9 @@
                 </div>
                 <div class="rh-menu">
                     <ul>
-                        <li><a href="#home">HOME</a></li>
-                        <li><a href="#products">PRODUCTS</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#home" class="navli">HOME</a></li>
+                        <li><a href="#products" class="navli">PRODUCTS</a></li>
+                        <li><a href="#contact" class="navli">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,29 +42,49 @@
             </div>
         </div>
     </section>
-    <section class="produckts">
-        <div class="container">
-            <div class="products-title">
-                <h3>PRODUCTS</h3>
+    <div id="pages">
+        <section id="products">
+            <div class="container">
+                <div class="products-title">
+                    <h3>PRODUCTS</h3>
+                </div>
+                <div class="products-list">
+                </div>
             </div>
-            <div class="products-list">
+        </section>
+        <section id="home">
+            <div class="container">
+                <div class="products-title">
+                    <h3>ABOUT US</h3>
+                </div>
+                <div class="about-us">
+                    <p>Who are we? Just a bunch of friends with<br> a love for a good coffee and desire to create<br> something new, something original</p>
+                    <p>Our coffees reflect us - young, wild and free.<br> We are on the journey of new tastes...</p>
+                    <p class="p-rgh">Join us!</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="join">
-        <div class="container">
-            <div class="products-title">
-                <h3>ABOUT US</h3>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="products-title">
+                    <h3>CONTACT US</h3>
+                </div>
+                <div class="form">
+                    <form class="send-form">
+                        <p>NAME</p>
+                        <input type="text" name="name" required>
+                        <p>TITLE</p>
+                        <input type="text" name="title">
+                        <p>MESSAGE</p>
+                        <textarea name="message" cols="30" rows="5" maxlength="500" required></textarea>
+                        <button type="submit">SUBMIT</button>
+                    </form>
+                </div>
             </div>
-            <div class="about-us">
-                <p>Who are we? Just a bunch of friends with<br> a love for a good coffee and desire to create<br> something new, something original</p>
-                <p>Our coffees reflect us - young, wild and free.<br> We are on the journey of new tastes...</p>
-                <p class="p-rgh">Join us!</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="footer">
-        <p><i class="far fa-copyright"></i></i>2023 EL TIGRE inc.</p>
+        <p><i class="far fa-copyright"></i>2023 EL TIGRE inc.</p>
     </section>
 
     <!--PRODUCTS TEMPLATE-->
@@ -82,7 +102,7 @@
                         <li>ROASTING: <span> {{ roasting }} </span></li>
                         <li>INTENSITY: <span> {{ intensity }}</span></li>
                     </ul>
-                    <img src="https://i.postimg.cc/qBbGqgP0/most-pop.jpg" class="disp {{popular}}" alt="popular">
+                    <img src="/images/most-pop.jpg" class="disp {{popular}}" alt="popular">
                 </div>
             </div>
             <div class="product-img">

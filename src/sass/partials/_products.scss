@@ -3,6 +3,7 @@ $font-header: 'Source Sans Pro', sans-serif;
 $font-menu: #fff;
 $font-title: #BEA67C;
 
+
 .products-title {
   text-align: center;
   margin: 0 auto;
@@ -115,6 +116,7 @@ $font-title: #BEA67C;
     width: 150px;
     top: -25px;
     right: 20px;
+
     &.hidden {
       display: none;
     }
