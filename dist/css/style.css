@@ -1,0 +1,402 @@
+/* VARIABLES */
+.title {
+  height: 805px;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.le-menu {
+  flex: 1;
+}
+.le-menu h3 {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 30px;
+  margin-left: 66px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  letter-spacing: 8px;
+}
+.le-menu p {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 12px;
+  margin-left: 68px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  letter-spacing: 4.5px;
+}
+
+.rh-menu {
+  flex: 1;
+  text-align: end;
+  padding-right: 13px;
+  padding-top: 33px;
+}
+.rh-menu li {
+  display: inline;
+  margin: 10px 10px;
+}
+.rh-menu .navli {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.rh-menu .navli.active {
+  color: #BEA67C;
+}
+.rh-menu .navli:hover {
+  color: #BEA67C;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  margin-top: 160px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.main-title h1 {
+  color: #BEA67C;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 77px;
+  letter-spacing: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
+.title-lf {
+  flex: 1;
+  margin-left: 40px;
+  margin-bottom: 0;
+  padding-top: 18px;
+}
+
+.title-rh {
+  flex: 1;
+  margin-top: 0;
+  margin-right: -20px;
+  text-align: end;
+}
+
+.main-title::after {
+  content: "";
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 221px;
+  height: 5px;
+  background: #BEA67C;
+  position: absolute;
+  margin-top: 52px;
+}
+
+.discovery {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0px;
+  text-align: center;
+}
+.discovery h2 {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  letter-spacing: 7.5px;
+}
+.discovery i {
+  color: #fff;
+  font-size: 30px;
+}
+
+#home {
+  height: 690px;
+  width: 100vw;
+  margin: 5px auto;
+  padding-top: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/about-us.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.about-us {
+  margin: 10px auto;
+  padding: 6px 0 0 30px;
+  width: 810px;
+  position: relative;
+}
+.about-us p {
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+}
+.about-us .p-rgh {
+  right: 0;
+  top: 275px;
+  position: absolute;
+}
+
+/* VARIABLES */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1050px;
+  position: relative;
+}
+.container.home {
+  height: 765px;
+}
+
+#pages > * {
+  display: none;
+}
+#pages > .active {
+  display: block;
+}
+
+.footer {
+  position: relative;
+  margin: 0;
+  height: 50px;
+  text-align: center;
+}
+.footer p {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 13px;
+  line-height: 0;
+}
+
+/* VARIABLES */
+.products-title {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.products-title h3 {
+  color: #BEA67C;
+  font-size: 60px;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 11px;
+  line-height: 1;
+}
+
+.products-title::after {
+  content: "";
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  height: 5px;
+  margin-top: 20px;
+  background: #BEA67C;
+  position: absolute;
+}
+
+.products-list {
+  margin-top: 117px;
+}
+
+.products-details {
+  display: flex;
+  width: 100%;
+  height: 340px;
+  margin: 40px auto 65px;
+}
+.products-details.reverse {
+  flex-direction: row-reverse;
+}
+.products-details.reverse img {
+  text-align: right;
+}
+
+.product-descr {
+  flex: 1;
+}
+
+.descr-one {
+  margin: 61px auto 0 95px;
+}
+.descr-one h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 38px;
+  letter-spacing: 3px;
+  line-height: 0;
+}
+
+.descr-two {
+  padding: 6px 40px 0 210px;
+  margin-top: 0;
+  position: relative;
+}
+.descr-two p {
+  margin: 0;
+  font-size: 12px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.descr-two::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  width: 90px;
+  height: 3px;
+  background: #BEA67C;
+}
+
+.descr-three {
+  margin-top: 37px;
+  padding-left: 65px;
+  position: relative;
+}
+.descr-three ul {
+  list-style-type: none;
+}
+.descr-three li {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.descr-three span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #BEA67C;
+}
+.descr-three .disp {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: -25px;
+  right: 20px;
+}
+.descr-three .disp.hidden {
+  display: none;
+}
+
+.product-img {
+  flex: 1;
+  padding-left: 10px;
+  text-align: center;
+}
+.product-img img {
+  object-fit: cover;
+  height: 340px;
+  width: 430px;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* HOME */
+@media (min-width: 380px) and (max-width: 1025px) {
+  .title {
+    background-size: auto;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .container {
+    margin: 0 auto;
+    width: 100vw;
+  }
+  .container.home {
+    width: 100vw;
+  }
+  .rh-menu {
+    text-align: center;
+  }
+  .lh-menu {
+    text-align: center;
+  }
+  .main-title {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .main-title h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
+  .title-lf {
+    margin: 0 auto;
+  }
+  .title-rh {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+.form {
+  height: 635px;
+  text-align: center;
+}
+.form p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 0;
+}
+
+form {
+  text-align: center;
+  display: block;
+  padding-top: 1px;
+}
+
+input {
+  margin: 17px auto;
+  width: 425px;
+  height: 56px;
+  border: 3px solid black;
+}
+
+button[type=submit] {
+  height: 65px;
+  width: 200px;
+  background: #BEA67C;
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  margin: 20px auto;
+  border: none;
+}
+
+textarea {
+  margin: 17px auto;
+  width: 425px;
+  height: 120px;
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */
