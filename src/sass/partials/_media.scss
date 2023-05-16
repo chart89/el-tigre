@@ -1,46 +1,150 @@
-/* HOME */
-@media (min-width: 380px) and (max-width: 1025px) {
+
+@media (min-width: 320px) and (max-width: 1025px) {
   .title {
     background-size: auto;
   }
-
   .header {
     flex-direction: column;
   }
-
   .container {
     margin: 0 auto;
-    width: 100vw;
-
-    &.home {
-      width: 100vw;
-    }
+    width: 300px;
   }
-
+  .container.home {
+    width: 300px;
+    min-height: 100px;
+  }
   .rh-menu {
     text-align: center;
+    padding: 13px auto;
   }
-
-  .lh-menu {
+  .rh-menu li {
+    margin: 5px;
+  }
+  .le-menu {
     text-align: center;
   }
-
+  .le-menu h3 {
+      margin: 25px auto 0 auto;
+  }
+  .le-menu p {
+      margin: 5px auto;
+  }
   .main-title {
     margin-top: 30px;
     text-align: center;
-
-    h1 {
-      font-size: 30px;
-      letter-spacing: 10px;
-    }
   }
-
+  .main-title h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+  }
   .title-lf {
     margin: 0 auto;
   }
-
   .title-rh {
     margin: 0 auto;
     text-align: center;
+  }
+  .products-title h3 {
+    font-size: 30px;
+    letter-spacing: 7px;
+  }
+  .products-title::after {
+    width: 250px;
+  }
+  .products-details {
+    flex-direction: column;
+    height: 500px;
+    &.reverse {
+    flex-direction: column;
+    }
+  }
+  .product-img {
+    padding: 0;
+    text-align: center;
+  }
+  .product-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .product-descr {
+    height: 200px;
+  }
+  .descr-one {
+    margin: 10px auto;
+    text-align: center;
+  }
+  .descr-one h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
+  .descr-two {
+    padding: 10px;
+  }
+  .descr-two p {
+    font-size: 12px;
+  }
+  .descr-two::after {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .descr-three {
+    margin-top: 37px;
+    padding: 10px;
+  }
+  .descr-three li {
+    letter-spacing: 1px;
+  }
+  .descr-three span {
+    letter-spacing: 1px;
+  }
+  .descr-three .disp {
+    height: 50px;
+    width: 50px;
+    top: -25px;
+    right: 20px;
+  }
+  .about-us {
+    margin: 10px auto;
+    padding: 5px auto 20px auto;
+    width: 300px;
+  }
+  .about-us p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+  .p-rgh {
+    right: 0;
+    top: 100px;
+  }
+  #home {
+    height: 300px;
+  }
+
+  .form p {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  input {
+    margin: 17px auto;
+    width: 250px;
+    height: 40px;
+  }
+
+  button[type=submit] {
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    margin: 20px auto;
+  }
+
+  textarea {
+    margin: 17px auto;
+    width: 250px;
+    height: 80px;
   }
 }

@@ -350,6 +350,14 @@ body {
     margin: 0 auto;
     text-align: center;
   }
+  /* PRODUCTS */
+  .products-title h3 {
+    font-size: 50px;
+    letter-spacing: 7px;
+  }
+  .products-title::after {
+    width: 300px;
+  }
 }
 .form {
   height: 635px;
