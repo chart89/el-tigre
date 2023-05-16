@@ -1,16 +1,19 @@
-
+/* VARIABLES */
+$font-header: 'Source Sans Pro', sans-serif;
+$font-menu: #fff;
+$font-title: #BEA67C;
 
 .form {
   height: 635px;
   text-align: center;
 
   p {
-      font-family: $font-header;
-      font-size: 23px;
-      font-weight: 700;
-      letter-spacing: 4px;
-      line-height: 0;
-    }
+    font-family: $font-header;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 0;
+  }
 }
 
 form {

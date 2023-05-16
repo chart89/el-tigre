@@ -1,17 +1,50 @@
-/* Error: Undefined variable.
- *   ,
- * 8 |       font-family: $font-header;
- *   |                    ^^^^^^^^^^^^
- *   '
- *   src\sass\partials\form.scss 8:20  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 8 \2502        font-family: $font-header;\d\a   \2502                     ^^^^^^^^^^^^\a   \2575 \a   src\\sass\\partials\\form.scss 8:20  root stylesheet";
+/* VARIABLES */
+.form {
+  height: 635px;
+  text-align: center;
 }
+.form p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 0;
+}
+
+form {
+  text-align: center;
+  display: block;
+  padding-top: 1px;
+}
+
+input {
+  margin: 17px auto;
+  width: 425px;
+  height: 56px;
+  border: 3px solid black;
+}
+
+button[type=submit] {
+  height: 65px;
+  width: 200px;
+  background: #BEA67C;
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  line-height: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  margin: 20px auto;
+  border: none;
+}
+
+textarea {
+  margin: 17px auto;
+  width: 425px;
+  height: 120px;
+  border: 3px solid black;
+}
+
+/*# sourceMappingURL=form.css.map */
